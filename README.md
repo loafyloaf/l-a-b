@@ -10,7 +10,7 @@ docker build -t loyalty-user-service:1.0-SNAPSHOT user-service
 
 ### Event service
 ```
-mvn -pl :event-service -am package -DskipTests
+mvn -pl :event-service -am package
 docker build -t loyalty-event-service:1.0-SNAPSHOT event-service
 ```
 
