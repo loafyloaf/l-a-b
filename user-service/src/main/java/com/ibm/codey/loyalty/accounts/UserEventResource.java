@@ -100,6 +100,7 @@ public class UserEventResource extends BaseResource {
      * This method returns the events that a user attended.
      */
     @GET
+    @Path("self")
     @Produces(MediaType.APPLICATION_JSON)
     @Transactional
     public Response getUserEvents() {
@@ -126,7 +127,7 @@ public class UserEventResource extends BaseResource {
      * This method returns information about a user's usage of the loyalty program.
      */
     @GET
-    @Path("info")
+    @Path("self/info")
     @Produces(MediaType.APPLICATION_JSON)
     @Transactional
     public Response getUserInfo() {

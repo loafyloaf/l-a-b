@@ -47,9 +47,9 @@ curl -X DELETE -k https://localhost:9443/loyalty/v1/users/self
 ```
 curl -X POST -H "Content-Type: application/json" -d "{\"eventId\": \"871859e4-9fca-4bcf-adb5-e7d063d0747e\"}" -k https://localhost:9443/loyalty/v1/userEvents
 
-curl -X GET -k https://localhost:9443/loyalty/v1/userEvents
+curl -X GET -k https://localhost:9443/loyalty/v1/userEvents/self
 
-curl -X GET -k https://localhost:9443/loyalty/v1/userEvents/info
+curl -X GET -k https://localhost:9443/loyalty/v1/userEvents/self/info
 ```
 
 
