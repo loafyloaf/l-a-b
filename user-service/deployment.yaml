@@ -31,11 +31,8 @@ spec:
         - secretRef:
             name: loyalty-appid-secret
         env:
-          - name: EVENT_SERVICE_URL
-            value: "http://loyalty-event-service:9080/loyalty/v1/events"
-      imagePullSecrets:
-      - name: roks43creds
-            
+        - name: EVENT_SERVICE_URL
+          value: "http://loyalty-event-service:9080/loyalty/v1/events"
 ---
 apiVersion: v1
 kind: Service
