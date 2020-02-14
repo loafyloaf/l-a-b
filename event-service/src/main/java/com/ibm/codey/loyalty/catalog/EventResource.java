@@ -119,6 +119,13 @@ public class EventResource {
             EventDefinition eventDefinition = new EventDefinition();
             eventDefinition.setEventName(event.getEventName());
             eventDefinition.setPointValue(event.getPointValue());
+            eventDefinition.setEventLocation(event.getEventLocation());
+
+            eventDefinition.setStartTime(event.getStartTime());
+            eventDefinition.setEndTime(event.getEndTime());
+            eventDefinition.setEventDescription(event.getEventDescription());
+            
+
             eventsResponse.put(event.getEventId(), eventDefinition);
         }
         return Response.status(Response.Status.OK).entity(eventsResponse).build();

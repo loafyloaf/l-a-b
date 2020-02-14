@@ -10,9 +10,20 @@ import lombok.ToString;
 public class EventDefinition {
 
     @JsonbProperty
+    private String eventLocation;
+
+    @JsonbProperty
+    private String eventDescription;
+
+    @JsonbProperty
+    private String startTime;
+
+    @JsonbProperty
+    private String endTime;
+
+    @JsonbProperty
     private String eventName;
 
     @JsonbProperty
     private int pointValue;
-
 }

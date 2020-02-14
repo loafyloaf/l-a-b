@@ -30,6 +30,18 @@ public class Event implements Serializable {
     @Column(name = "event_name")
     private String eventName;
 
+    @Column(name = "description")
+    private String eventDescription;
+
+    @Column(name = "location")
+    private String eventLocation;
+
+    @Column(name = "start_time")
+    private String startTime;
+
+    @Column(name = "end_time")
+    private String endTime;
+
     @Column(name = "point_value")
     private int pointValue;
 
