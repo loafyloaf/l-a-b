@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: loyalty-user-service
-        image: us.icr.io/gregd/loyalty-user-service:1.0-SNAPSHOT
+        image: us.icr.io/codey-cr/loyalty-user-service:1.0-SNAPSHOT
         imagePullPolicy: Always
         ports:
         - name: http-server
@@ -33,6 +33,9 @@ spec:
         env:
           - name: EVENT_SERVICE_URL
             value: "http://loyalty-event-service:9080/loyalty/v1/events"
+      imagePullSecrets:
+      - name: roks43creds
+            
 ---
 apiVersion: v1
 kind: Service

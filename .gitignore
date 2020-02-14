@@ -31,3 +31,6 @@
 
 ## Local configuration files
 /local/config/*
+
+*.swo
+*.swp

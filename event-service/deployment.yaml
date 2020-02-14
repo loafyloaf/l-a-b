@@ -16,8 +16,10 @@ spec:
     spec:
       containers:
       - name: loyalty-event-service
-        image: us.icr.io/gregd/loyalty-event-service:1.0-SNAPSHOT
+        image: us.icr.io/codey-cr/loyalty-event-service:1.0-SNAPSHOT
         imagePullPolicy: Always
+      imagePullSecrets:
+      - name: roks43creds
         ports:
         - name: http-server
           containerPort: 9080
